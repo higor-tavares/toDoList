@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Init the react project",
+        "done": true,
+        "dateToDo": "2022-09-05"
+    },
+    {
+        "id":2,
+        "name": "Learn Redux",
+        "done": false,
+        "dateToDo": "2022-09-15"
+    }
+]

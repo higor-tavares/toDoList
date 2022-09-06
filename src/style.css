@@ -1,0 +1,30 @@
+#root{
+    width: 70%;
+    margin: auto;
+}
+.task{
+    border: 1px solid #DDD;
+    box-shadow: 2px 2px 4px #CCC;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 12px;
+    display: flex;
+    position: relative;
+    gap:16px;
+}
+.taskName{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.taskName div:nth-child(2) {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+.name{
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+}
