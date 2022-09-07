@@ -28,3 +28,25 @@
     text-transform: capitalize;
     width: 100%;
 }
+#newTask{
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid blueviolet;
+    justify-content: space-between;
+}
+#newTask button{
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+#newTask input{
+    line-height: 24px;
+}
+#newTask label{
+    font-weight: bold;
+}

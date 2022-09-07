@@ -1,14 +1,21 @@
 import { createRoot } from "react-dom/client";
-import Task from "./Task";
-import tasks from '../data/tasks.json';
+import { useState } from "react";
+import AddTask from "./AddTask";
+import Task from './Task'
 const App = () => {
+  const [tasks, setTasks] = useState([]);
 
   return (
     <div>
-        <h1>To Do List</h1>
-      {tasks.map((task) => (
+      <h1>To Do List</h1>
+      <AddTask
+        callBack={(task) => {
+          setTasks((tasks) => [...tasks, task]);
+        }}
+      />
+      {tasks.map((task, index) => (
         <Task
-          key={task.id}
+          key={index}
           name={task.name}
           done={task.done}
           dateToDo={task.dateToDo}
