@@ -22,13 +22,15 @@ const AddTask = ({ callBack }) => {
           onChange={(e) => setDateToDo(e.target.value)}
         ></input>
         <button
-          onClick={() =>
+          onClick={() => {
+            setName("");
+            setDateToDo("");
             callBack({
               name: name,
               done: false,
               dateToDo: dateToDo,
-            })
-          }
+            });
+          }}
           type="button"
         >
           Add Task

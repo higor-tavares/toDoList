@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { useState } from "react";
 import AddTask from "./AddTask";
-import Task from './Task'
+import Task from "./Task";
 const App = () => {
   const [tasks, setTasks] = useState([]);
 
