@@ -5,7 +5,10 @@ import AddTask from "./AddTask";
 import Task from "./Task";
 const App = () => {
   const [tasks, setTasks] = useState([]);
-
+  const  handleTaskCheck = (index) => {
+    tasks[index].done = !tasks[index].done
+    setTasks((tasks) => [...tasks]);
+  }
   return (
     <div>
       <h1>To Do List</h1>
@@ -20,6 +23,7 @@ const App = () => {
           name={task.name}
           done={task.done}
           dateToDo={task.dateToDo}
+          callBack={() => handleTaskCheck(index)}
         />
       ))}
     </div>

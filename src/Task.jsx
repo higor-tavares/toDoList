@@ -3,7 +3,13 @@ const Task = (props) => {
   return (
     <div className="task">
       <div>
-        <input type="checkbox" checked={props.done}></input>
+        <input
+          type="checkbox"
+          checked={props.done}
+          onChange={(e) => {
+            props.callBack();
+          }}
+        ></input>
       </div>
       <div className="taskName">
         <div className="name">{props.name}</div>
